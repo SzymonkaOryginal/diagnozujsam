@@ -8,48 +8,43 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        main {
+            margin-left: 220px;
+            padding: 20px;
         }
         header {
             background-color: #007BFF;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
         }
         header h1 {
             margin: 0;
-            font-size: 3em;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .banner {
-            background-image: url('https://via.placeholder.com/1600x600');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 150px 20px;
-        }
-        .banner h2 {
-            font-size: 2.5em;
         }
         .articles {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 30px;
-            padding: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
         .article {
             background-color: white;
@@ -60,42 +55,37 @@
         .footer {
             background-color: #333;
             color: white;
-            padding: 20px 0;
+            padding: 10px;
             text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Diagnozuj Sam</h1>
-</header>
-
-<nav>
+<div class="sidebar">
     <a href="#">Strona główna</a>
     <a href="#">Poradniki</a>
-    <a href="#">Najczęstsze problemy</a>
+    <a href="#">FAQ</a>
     <a href="#">Kontakt</a>
-</nav>
-
-<div class="banner">
-    <h2>Proste rozwiązania z OBD11 na wyciągnięcie ręki!</h2>
 </div>
 
-<div class="articles">
-    <div class="article">
-        <h3>Jak odczytać i zresetować błędy OBD11</h3>
-        <p>Dowiedz się, jak wykorzystać OBD11 do naprawy błędów w Twoim samochodzie.</p>
+<main>
+    <header>
+        <h1>Diagnozuj Sam</h1>
+    </header>
+
+    <div class="articles">
+        <div class="article">
+            <h3>Jak odczytać i zresetować błędy OBD11</h3>
+            <p>Dowiedz się, jak odczytać błędy za pomocą OBD11 i jak je zresetować.</p>
+        </div>
+        <div class="article">
+            <h3>Jak zdiagnozować problemy z silnikiem</h3>
+            <p>Prosty przewodnik, jak znaleźć problemy z silnikiem za pomocą OBD11.</p>
+        </div>
     </div>
-    <div class="article">
-        <h3>Jak zdiagnozować problemy z silnikiem</h3>
-        <p>Wskazówki, jak znaleźć problemy z silnikiem za pomocą OBD11.</p>
-    </div>
-    <div class="article">
-        <h3>Resetowanie adaptacji przepustnicy</h3>
-        <p>Przewodnik po resetowaniu adaptacji przepustnicy w Twoim pojeździe.</p>
-    </div>
-</div>
+</main>
 
 <div class="footer">
     <p>© 2024 Diagnozuj Sam</p>
