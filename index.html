@@ -8,63 +8,41 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #e9ecef;
+            padding: 0;
+            background-color: #f0f0f0;
         }
-        header {
-            background-color: #28a745;
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x1000');
+            background-size: cover;
             color: white;
             text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            font-size: 3em;
-        }
-        .articles {
+            height: 100vh;
             display: flex;
-            justify-content: space-around;
-            padding: 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        .article {
-            background-color: white;
-            width: 30%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            text-align: center;
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
         }
-        .article h3 {
+        .hero p {
             font-size: 1.5em;
-        }
-        .article p {
-            color: #333;
+            margin-top: 20px;
         }
         .footer {
-            background-color: #28a745;
+            background-color: #007BFF;
             color: white;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
     </style>
 </head>
 <body>
 
-<header>
+<div class="hero">
     <h1>Diagnozuj Sam</h1>
-</header>
-
-<div class="articles">
-    <div class="article">
-        <h3>Jak odczytać i zresetować błędy OBD11</h3>
-        <p>Wszystko, co musisz wiedzieć o odczytywaniu i kasowaniu błędów OBD11.</p>
-    </div>
-    <div class="article">
-        <h3>Jak zdiagnozować problemy z silnikiem</h3>
-        <p>Przewodnik po najczęstszych problemach z silnikiem, które możesz zdiagnozować za pomocą OBD11.</p>
-    </div>
-    <div class="article">
-        <h3>Resetowanie adaptacji przepustnicy</h3>
-        <p>Instrukcja jak wykonać reset adaptacji przepustnicy w Twoim pojeździe.</p>
-    </div>
+    <p>Proste rozwiązania dla Twojego samochodu przy użyciu OBD11</p>
 </div>
 
 <div class="footer">
