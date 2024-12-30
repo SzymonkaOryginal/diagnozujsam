@@ -10,43 +10,33 @@
             margin: 0;
             background-color: #f4f4f4;
         }
-        .sidebar {
-            width: 220px;
-            height: 100vh;
-            background-color: #343a40;
-            color: white;
-            padding-top: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            text-align: center;
-        }
-        .sidebar a {
-            display: block;
-            color: white;
-            padding: 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .sidebar a:hover {
-            background-color: #575757;
-        }
-        main {
-            margin-left: 240px;
-        }
-        .hero {
+        .header {
             background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 60px 20px;
         }
-        .hero h1 {
+        .header h1 {
             font-size: 4em;
             margin: 0;
         }
-        .hero p {
+        .header p {
             font-size: 1.5em;
             margin-top: 20px;
+        }
+        .navbar {
+            background-color: #343a40;
+            overflow: hidden;
+        }
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background-color: #575757;
         }
         .card-container {
             display: flex;
@@ -81,7 +71,12 @@
 </head>
 <body>
 
-<div class="sidebar">
+<div class="header">
+    <h1>Diagnozuj Sam</h1>
+    <p>Rozwiąż problemy z samochodem za pomocą OBD11</p>
+</div>
+
+<div class="navbar">
     <a href="#">Strona główna</a>
     <a href="#">Poradniki</a>
     <a href="#">FAQ</a>
@@ -89,11 +84,6 @@
 </div>
 
 <main>
-    <div class="hero">
-        <h1>Diagnozuj Sam</h1>
-        <p>Rozwiąż problemy z samochodem za pomocą OBD11</p>
-    </div>
-
     <div class="card-container">
         <div class="card">
             <h3>Jak odczytać błędy</h3>
@@ -108,7 +98,6 @@
             <p>Instrukcje, jak zresetować adaptacje przepustnicy i innych komponentów.</p>
         </div>
     </div>
-
 </main>
 
 <div class="footer">
