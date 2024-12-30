@@ -7,31 +7,53 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x1000');
-            background-size: cover;
+        header {
+            background-color: #343a40;
             color: white;
             text-align: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            padding: 40px 0;
         }
-        .hero h1 {
-            font-size: 4em;
+        header h1 {
             margin: 0;
         }
-        .hero p {
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 40px;
+        }
+        .article {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .article h3 {
             font-size: 1.5em;
-            margin-top: 20px;
+        }
+        .article p {
+            color: #333;
+        }
+        .article button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        .article button:hover {
+            background-color: #0056b3;
         }
         .footer {
-            background-color: #007BFF;
+            background-color: #343a40;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -40,9 +62,26 @@
 </head>
 <body>
 
-<div class="hero">
+<header>
     <h1>Diagnozuj Sam</h1>
-    <p>Proste rozwiązania dla Twojego samochodu przy użyciu OBD11</p>
+</header>
+
+<div class="articles">
+    <div class="article">
+        <h3>Jak odczytać i zresetować błędy OBD11</h3>
+        <p>Prosty przewodnik po odczytywaniu i kasowaniu błędów za pomocą OBD11.</p>
+        <button>Przeczytaj więcej</button>
+    </div>
+    <div class="article">
+        <h3>Jak zdiagnozować problemy z silnikiem</h3>
+        <p>Wskazówki, jak znaleźć problemy z silnikiem za pomocą OBD11.</p>
+        <button>Przeczytaj więcej</button>
+    </div>
+    <div class="article">
+        <h3>Resetowanie adaptacji przepustnicy</h3>
+        <p>Przewodnik po resetowaniu adaptacji przepustnicy w Twoim pojeździe.</p>
+        <button>Przeczytaj więcej</button>
+    </div>
 </div>
 
 <div class="footer">
