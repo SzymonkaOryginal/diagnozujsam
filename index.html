@@ -7,50 +7,69 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
             margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
         }
-        header {
+        .sidebar {
+            width: 220px;
+            height: 100vh;
             background-color: #343a40;
             color: white;
+            padding-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
             text-align: center;
-            padding: 40px 0;
         }
-        header h1 {
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        main {
+            margin-left: 240px;
+        }
+        .hero {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 4em;
             margin: 0;
         }
-        .articles {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 40px;
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 20px;
         }
-        .article {
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px;
+            gap: 30px;
+        }
+        .card {
+            width: 300px;
             background-color: white;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             border-radius: 8px;
             text-align: center;
         }
-        .article h3 {
+        .card h3 {
+            margin-top: 0;
             font-size: 1.5em;
         }
-        .article p {
-            color: #333;
-        }
-        .article button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
+        .card p {
             font-size: 1em;
-            margin-top: 10px;
-        }
-        .article button:hover {
-            background-color: #0056b3;
+            color: #555;
         }
         .footer {
             background-color: #343a40;
@@ -62,27 +81,35 @@
 </head>
 <body>
 
-<header>
-    <h1>Diagnozuj Sam</h1>
-</header>
-
-<div class="articles">
-    <div class="article">
-        <h3>Jak odczytać i zresetować błędy OBD11</h3>
-        <p>Prosty przewodnik po odczytywaniu i kasowaniu błędów za pomocą OBD11.</p>
-        <button>Przeczytaj więcej</button>
-    </div>
-    <div class="article">
-        <h3>Jak zdiagnozować problemy z silnikiem</h3>
-        <p>Wskazówki, jak znaleźć problemy z silnikiem za pomocą OBD11.</p>
-        <button>Przeczytaj więcej</button>
-    </div>
-    <div class="article">
-        <h3>Resetowanie adaptacji przepustnicy</h3>
-        <p>Przewodnik po resetowaniu adaptacji przepustnicy w Twoim pojeździe.</p>
-        <button>Przeczytaj więcej</button>
-    </div>
+<div class="sidebar">
+    <a href="#">Strona główna</a>
+    <a href="#">Poradniki</a>
+    <a href="#">FAQ</a>
+    <a href="#">Kontakt</a>
 </div>
+
+<main>
+    <div class="hero">
+        <h1>Diagnozuj Sam</h1>
+        <p>Rozwiąż problemy z samochodem za pomocą OBD11</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Jak odczytać błędy</h3>
+            <p>Przewodnik po odczytywaniu błędów i kasowaniu kodów OBD11.</p>
+        </div>
+        <div class="card">
+            <h3>Diagnostyka silnika</h3>
+            <p>Dowiedz się, jak zdiagnozować problemy z silnikiem przy użyciu OBD11.</p>
+        </div>
+        <div class="card">
+            <h3>Resetowanie adaptacji</h3>
+            <p>Instrukcje, jak zresetować adaptacje przepustnicy i innych komponentów.</p>
+        </div>
+    </div>
+
+</main>
 
 <div class="footer">
     <p>© 2024 Diagnozuj Sam</p>
